@@ -16,12 +16,12 @@ spring:
         - id: currency-exchange
           uri: lb://currency-exchange
           predicates:
-            - Path=/exchange/**
+            - Path=/currency-exchange/**
 
-        - id: currency-conversion
-          uri: lb://currency-conversion
+        - id: currency-converter
+          uri: lb://currency-converter
           predicates:
-            - Path=/conversion/**
+            - Path=/currency-converter/**
 
 eureka:
   client:
